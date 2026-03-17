@@ -70,7 +70,8 @@ def uploaded():
 @app.route('/files')
 def files():
     path = f'{Path(__file__).parent}'
-    file_path = path + "\\files"
+    # file_path = path + "\\files"
+    file_path = path + "/files"
     print(file_path)
     fichier = []
     for item in os.listdir(file_path):
